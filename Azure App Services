@@ -1,0 +1,57 @@
+Azure Paas for web and mobile applications
+it has 4 components : 
+    - Web Apps
+    - API Apps
+    - Mobile Apps
+    - Function Apps
+Build-in authentication with AD, Facebook, Google, Twitte, Microsoft Accounts.
+The autentication is done before request reach your application.
+KUDU Tools -interaction with vm that app is hosted like manage, troubleshoot, deploy app, 
+When you deploy m app you have a link like https://yourapp.azurewebsites.net and 
+  to youse kudu https://yourapp.scm.azurewebsites.net
+Benefits for developers:
+	- Continuous Integration 
+	- Deployment Slots
+	- Remote Debugging
+	- Logging
+	- Application Insights
+	- Authentication
+Benefits for Administrators
+	- OS Middleware Patching
+	- Auto-scale eihter manually or when metrics are reached
+	- Auto-heal --> restart app when issues are detected; cand be turned off/on
+	- Metrics and Logs
+	- Custom Domains and SSL
+	- Availability SLA 99.95%
+App Service - API Features
+	- Open API (Swagger)
+		 Interactive documentation and help pages
+		 Exposed as jsoon endpoint
+		 Helps with integration
+	- Azure API Management
+	   Monitor and throttle usage
+		 Manipulate input/output
+		 Portal for developers
+No additional cost for Function Apps
+you cand set Always On function apps
+WebJobs similar like windows services in a vm but there are restriction and there is no aditional cost
+		- run program or script in the background like exe bat cmd ps1 sh php py js jar
+		- view history and logs for WebJobs
+		- WebJobs SDK simplifies webjobs and easier integration with azure services e.q. blobs, queues, tables
+		- executuion cand be continuously, schedule or triggerd
+Deployment option
+	- Visual Studio 
+	- Continuous deployment 
+			- Visual Studio Team Services
+			- Bitbucket
+			- GitHub
+	Local Git deployment
+	OneDrive / Dropbox 
+	FTP
+	ZIP/WAR file deployment
+		
+		- no access to registry , windows event logs, shared components of windows like cryptography or graphics
+
+
+	
+	
