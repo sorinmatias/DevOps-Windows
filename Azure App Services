@@ -51,6 +51,16 @@ Deployment option
 	ZIP/WAR file deployment
 		
 		- no access to registry , windows event logs, shared components of windows like cryptography or graphics
+Multiple deployment slots
+prod 		- mysite.azurewebsites.net
+staging 	- mysite-staging.azurewebsites.net
+dev		- mysite-dev.azurewebsites.net
+!! Deploymenty slot is another app running on the same infrastructure
+Azure recomandation:
+	use production and staging on one app service plan 
+	and testing on another app service plan
+	
+Azure DNS - configure ns of your domain to azure nameservers and manage you domain from azure portal
 
 
 	
